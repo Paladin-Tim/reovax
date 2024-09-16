@@ -1,0 +1,171 @@
+.welcome {
+  background-color: $color-background;
+  min-height: 90vh;
+  padding: 0;
+
+  &__content {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    max-width: 50%;
+  }
+
+  &__region {
+    color: $color-green;
+    white-space: nowrap;
+  }
+
+  &__hot-menu {
+    max-width: 40%;
+
+    .button {
+      border-radius: $button-pill;
+      border: solid $color-orange 1px;
+      background-color: transparent;
+      color: $color-orange;
+      padding: 0.75rem 2rem;
+    }
+  }
+
+  &__request-button {
+    border-radius: $button-pill;
+    border: none;
+    background-color: $color-orange;
+    color: #fff;
+    padding: 0.75rem 2rem;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    filter: drop-shadow(-4rem 0px 0px #c6d7ca);
+  }
+
+  &__image {
+    background-image: url("../img/welcome.png");
+    position: absolute;
+    background-position: left;
+    background-size: cover;
+    height: 100%;
+    width: 43vw;
+    right: 0;
+    clip-path: ellipse(100% 100% at 100% 50%);
+  }
+
+  &__about-video {
+    position: absolute;
+    left: 50%;
+    top: 16rem;
+
+    .about-video__button {
+      background-color: transparent;
+      border: none;
+      border-radius: 50%;
+      padding: 1rem;
+      aspect-ratio: 1/1;
+      background-image: url("../img/play.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .text-container__1 {
+        position: relative;
+        perspective: 5em;
+        transform: rotate(-60deg);
+
+        span {
+          color: $color-green;
+          position: absolute;
+          width: 1em;
+          font-size: 1rem;
+          white-space: nowrap;
+          text-indent: calc(var(--i) * -1em);
+          overflow: hidden;
+          transform: translate(-50%, -50%) rotate(calc(11deg * var(--i)))
+            translateY(calc(-1em / sin(12deg))) rotateX(-90deg);
+        }
+      }
+
+      .text-container__2 {
+        position: relative;
+        perspective: 5em;
+        transform: rotate(90deg);
+
+        span {
+          color: $color-green;
+          position: absolute;
+          width: 1em;
+          font-size: 1rem;
+          white-space: nowrap;
+          text-indent: calc(var(--i) * -1em);
+          overflow: hidden;
+          transform: translate(-50%, -50%) rotate(calc(-11deg * var(--i)))
+            translateY(calc(-1em / sin(-12deg))) rotateX(90deg);
+        }
+      }
+    }
+  }
+}
+
+.advanteges {
+  &__item {
+    border: solid #e8e8e8 1px;
+    border-radius: 12px;
+    padding: 1.25rem 1.9rem 1.5rem 1.9rem;
+  }
+
+  &__icon-wrapper {
+    background-color: $color-green;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    border-radius: 50%;
+
+    .advantege-1__icon {
+      background-image: url("../img/credit-card.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 2rem;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+
+    .advantege-2__icon {
+      background-image: url("../img/trending-up.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 2rem;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+
+    .advantege-3__icon {
+      background-image: url("../img/truck.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 2rem;
+      aspect-ratio: 1 / 1;
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.about {
+  border-top: solid $color-orange 3px;
+  border-bottom: solid $color-orange 3px;
+  padding: 5rem 0 5rem;
+
+  &__text {
+    max-width: 75%;
+  }
+}

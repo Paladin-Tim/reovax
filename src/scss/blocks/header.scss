@@ -1,0 +1,123 @@
+.header {
+  & .info-menu {
+    &__info {
+      flex-grow: 0.3;
+    }
+    &__logo {
+      background-image: url("../img/ecolom_logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 4rem;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        font-size: 0;
+      }
+    }
+    &__worktime {
+      font-size: 0.8rem;
+      color: $color-font-light;
+    }
+
+    &__search {
+      input {
+        box-sizing: border-box;
+        background-image: url("../img/search.svg");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 0.75rem 0.1rem 0.75rem 3rem;
+        border: none !important;
+        border-radius: $button-pill;
+        background-color: #fff7f3;
+
+        &::placeholder {
+          color: $color-orange;
+        }
+      }
+    }
+
+    &__calc {
+      .button {
+        color: #105720;
+        border: none;
+        background-color: transparent;
+      }
+    }
+    &__messangers {
+      .button {
+        border-radius: 50%;
+        border: none;
+        background-color: $color-background;
+        aspect-ratio: 1/1;
+        padding: 0.5rem;
+        height: 2.3rem;
+
+        a {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          aspect-ratio: 1/1;
+          display: block;
+        }
+      }
+    }
+    &__whatsapp {
+      a {
+        background-image: url("../img/whatsapp.svg");
+      }
+    }
+    &__telegram {
+      a {
+        background-image: url("../img/telegram.svg");
+      }
+    }
+    &__viber {
+      a {
+        background-image: url("../img/viber.svg");
+      }
+    }
+    &__tel-mail {
+      a {
+        text-decoration: none;
+      }
+    }
+    &__phone {
+      a {
+        color: $color-font;
+      }
+    }
+    &__mail {
+      a {
+        color: $color-font-light;
+      }
+    }
+    &__callback {
+      .button {
+        border-radius: $button-pill;
+        border: solid $color-orange 1px;
+        background-color: transparent;
+        color: $color-orange;
+        padding: 0.75rem 2rem;
+      }
+    }
+  }
+
+  & .nav-menu {
+    &__item {
+      border: none;
+      background-color: transparent;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: 0 0 1.5rem;
+      border-bottom: solid transparent 1px;
+
+      &:hover {
+        color: $color-orange;
+        border-bottom: solid $color-orange 1px;
+      }
+    }
+  }
+}

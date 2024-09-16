@@ -1,0 +1,16 @@
+@import "bootstrap/scss/bootstrap";
+@import "./variables.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main.scss";
+
+/* --- Global styles --- */
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-family;
+  font-style: normal;
+  color: $color-font !important;
+}
